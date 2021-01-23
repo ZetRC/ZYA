@@ -36,7 +36,7 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: black;
     border: none;
     outline: none;
     background: transparent;
@@ -46,7 +46,7 @@
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
+    color: black;
     outline: none;
     background: transparent;
 }
@@ -55,6 +55,7 @@
 .slick-next:hover:before,
 .slick-next:focus:before
 {
+    color: black;
     opacity: 1;
 }
 .slick-prev.slick-disabled:before,
@@ -89,10 +90,12 @@
 .slick-prev:before
 {
     content: '←';
+    color: black;
 }
 [dir='rtl'] .slick-prev:before
 {
     content: '→';
+    color: black;
 }
 
 .slick-next
@@ -107,10 +110,12 @@
 .slick-next:before
 {
     content: '→';
+    color: black;
 }
 [dir='rtl'] .slick-next:before
 {
     content: '←';
+    color: black;
 }
 
 /* Dots */

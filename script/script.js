@@ -28,9 +28,7 @@
                     .then(()=>{
                       
                       $('#prod-cont , #prod-cont-2').slick({
-                          dots: true,
                           infinite: true,
-                          arrows:true,
                           speed: 300,
                           slidesToShow: 5,
                           slidesToScroll: 5,
@@ -63,9 +61,7 @@
                   })
                   
           })
-      
           buildProductsStripes()
 
 
     })
-    
