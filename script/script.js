@@ -61,7 +61,15 @@
                   })
                   
           })
+
+          var initLoader=(()=>{
+            setTimeout(()=>{
+              $("#loader").css("display","none")
+            },3000)
+          })
+
+          initLoader()
           buildProductsStripes()
+          
 
-
-    })
+        })
