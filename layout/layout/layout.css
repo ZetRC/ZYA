@@ -148,6 +148,7 @@ nav ul li:hover {
   height: inherit;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 .categories .cat-element img {
   width: 100%;
@@ -162,7 +163,7 @@ nav ul li:hover {
 }
 
 .featured-prod {
-  margin: 3rem 0;
+  margin: 3rem 15px;
 }
 .featured-prod .prod-cont {
   max-width: 90%;
@@ -261,21 +262,6 @@ footer .footer-content p {
   nav ul {
     display: none;
   }
-}
-@media (max-width: 480px) {
-  .text-a {
-    font-size: 1.5rem;
-  }
-
-  .categories {
-    margin: 15px;
-  }
-  .categories .cat-element {
-    height: 10rem;
-  }
-  .categories .cat-element img {
-    height: 10rem;
-  }
 
   footer .footer-content label {
     left: 0;
@@ -285,9 +271,41 @@ footer .footer-content p {
     align-items: center;
     text-align: center;
   }
+  footer .footer-content p {
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 480px) {
+  .text-a {
+    font-size: 1.5rem;
+  }
+
+  .categories {
+    margin: 15px;
+    margin-top: 1.5rem;
+  }
+  .categories .cat-element {
+    height: 10rem;
+  }
+  .categories .cat-element img {
+    height: 10rem;
+  }
 
   .main-prod img, .coming-soon img {
     min-height: 150px;
+  }
+
+  .featured-prod {
+    margin: 1.8rem 15px;
+  }
+  .featured-prod .prod-cont .product-element .productName {
+    font-size: 0.8rem;
+  }
+  .featured-prod .prod-cont .product-element .productPrice {
+    font-size: 1.2rem;
+  }
+  .featured-prod .prod-cont .product-element img {
+    height: 8rem;
   }
 }
 
