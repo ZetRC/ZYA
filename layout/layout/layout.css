@@ -129,73 +129,6 @@ nav ul li:hover {
   opacity: 1;
 }
 
-.categories {
-  display: flex;
-  margin: 5rem 5rem 0;
-}
-.categories .cat-element {
-  height: 20rem;
-  position: relative;
-  width: 100%;
-  cursor: pointer;
-}
-.categories .cat-element span, .categories .cat-element h3 {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: inherit;
-  height: inherit;
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.3);
-  text-align: center;
-}
-.categories .cat-element img {
-  width: 100%;
-  height: 20rem;
-  object-fit: cover;
-}
-.categories .cat-element img:before {
-  content: "yee yee ass haircut";
-  width: 100%;
-  height: 20rem;
-  background-color: aqua;
-}
-
-.featured-prod {
-  margin: 3rem 15px;
-}
-.featured-prod .prod-cont {
-  max-width: 90%;
-  margin: 0 auto;
-}
-.featured-prod .product-element {
-  text-align: center;
-  padding: 1rem;
-  cursor: pointer;
-}
-.featured-prod .product-element img {
-  width: 100%;
-  max-width: 12rem;
-  height: 12rem;
-  margin: 25px auto;
-  object-fit: contain;
-}
-.featured-prod .product-element .productName {
-  font-size: 1.2rem;
-  font-weight: bold;
-  opacity: 0.6;
-  margin: 1.5rem 10% 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.featured-prod .product-element .productPrice {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin: 0.4rem 0;
-}
-
 footer {
   width: 100%;
   height: auto;
@@ -264,7 +197,7 @@ footer .footer-content p {
   }
 
   footer .footer-content label {
-    left: 0;
+    left: 5px;
   }
   footer .footer-content .footer-info-cont {
     flex-flow: column;
@@ -275,6 +208,79 @@ footer .footer-content p {
     margin: 1rem 0;
   }
 }
+.main-prod img {
+  width: 100%;
+  /* max-height: 700px !important; */
+  object-fit: cover;
+}
+
+.categories {
+  display: flex;
+  margin: 5rem 5rem 0;
+}
+.categories .cat-element {
+  height: 20rem;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+.categories .cat-element span, .categories .cat-element h3 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.categories .cat-element img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.categories .cat-element img:before {
+  content: "yee yee ass haircut";
+  width: 100%;
+  height: 20rem;
+  background-color: aqua;
+}
+
+.featured-prod {
+  margin: 3rem 15px;
+}
+.featured-prod .prod-cont {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.featured-prod .product-element {
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+.featured-prod .product-element img {
+  width: 100%;
+  max-width: 12rem;
+  height: 12rem;
+  margin: 25px auto;
+  object-fit: contain;
+}
+.featured-prod .product-element .productName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  opacity: 0.6;
+  margin: 1.5rem 10% 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.featured-prod .product-element .productPrice {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0.4rem 0;
+}
+
 @media (max-width: 480px) {
   .text-a {
     font-size: 1.5rem;
