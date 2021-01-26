@@ -108,6 +108,7 @@ nav label {
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 nav .menu-toggler {
   display: none;
@@ -184,7 +185,7 @@ footer .footer-content p {
   font-size: 0.8rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   nav .menu-toggler {
     display: flex;
     align-items: center;
@@ -197,11 +198,13 @@ footer .footer-content p {
     position: absolute;
     top: 80px;
     z-index: 10;
-    display: block;
     height: auto;
     background: #ffffff;
     width: 100%;
     padding: 0;
+  }
+  nav ul li {
+    margin: 5px 1.5rem;
   }
 
   footer .footer-content label {
@@ -320,7 +323,7 @@ footer .footer-content p {
   }
 
   .featured-prod {
-    margin: 1.8rem 15px;
+    margin: 1.5rem 15px;
   }
   .featured-prod .prod-cont .product-element .productName {
     font-size: 0.8rem;
