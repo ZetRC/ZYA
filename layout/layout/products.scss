@@ -20,7 +20,8 @@
 }
 
 section{
-    margin: 0 10rem;
+    max-width: 100rem;
+    margin: 0 auto;
 }
 
 input{
@@ -57,16 +58,19 @@ input{
         display: flex;
         margin-top: 35px;
         .prod-filters{
-            width: 160rem;
+            width: 12rem;
             .filter{
                 display:flex;
                 flex-flow: column;
                 padding: .8rem 1rem;
+                .filter-element-cont{
+                    width: max-content;
+                }
             }
         }
     
         .products-container{
-            
+            width:calc(100% - 12rem);;
             .prod-cont{
                 padding: 0 !important;
                 margin: 0 !important;
@@ -75,6 +79,26 @@ input{
                 }
             }
 
+        }
+    }
+}
+
+@media(max-width:1025px){
+    section{
+        margin: 0 1rem;
+    }
+}
+
+@media(max-width:768px){
+    .prod-filters{
+        display: none;
+    }
+
+    .product-grid{
+        .cont{
+            .products-container{
+                width:100%
+            }
         }
     }
 }

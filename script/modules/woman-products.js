@@ -7,7 +7,7 @@ $(document).ready(function(){
                   var cont="";
 
                   data.forEach((u)=>{
-                    cont +=`<div id='product-element ' class='product-element col-xl-3 col-md-4 col-6 '>`
+                    cont +=`<div id='product-element ' class='product-element col-xl-3 col-lg-4 col-6 '>`
                     cont +=`<img src='${u.image}'>`
                     cont +=`<div class='productName'>${u.title}</div>`
                     cont +=`<div class='productPrice'>$${u.price}</div>`
