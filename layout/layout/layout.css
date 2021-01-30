@@ -17,9 +17,10 @@ a {
 }
 a:hover {
   color: inherit;
+  text-decoration: none;
 }
 
-label {
+.logo {
   font-size: 2.8rem;
   position: relative;
   left: 1.5rem;
@@ -36,6 +37,33 @@ label {
   font-weight: bold;
   text-align: center;
   margin: 1rem 0;
+}
+
+.product-element {
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+.product-element img {
+  width: 100%;
+  max-width: 12rem;
+  height: 10rem;
+  margin: 25px auto;
+  object-fit: contain;
+}
+.product-element .productName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1.5rem 10% 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.product-element .productPrice {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.4rem 0;
+  opacity: 0.6;
 }
 
 .loader {
@@ -97,6 +125,7 @@ nav {
   height: 80px;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
 }
 nav label {
   font-size: 2.8rem;
@@ -120,7 +149,7 @@ nav ul {
 }
 nav ul li {
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0 2.2rem;
   font-weight: bold;
   opacity: 0.8;
@@ -222,117 +251,6 @@ footer .footer-content p {
 @media (min-width: 768px) {
   nav ul {
     display: flex !important;
-  }
-}
-.main-prod img {
-  width: 100%;
-  /* max-height: 700px !important; */
-  object-fit: cover;
-}
-
-.categories {
-  display: flex;
-  margin: 5rem 5rem 0;
-}
-.categories .cat-element {
-  height: 20rem;
-  position: relative;
-  width: 100%;
-  cursor: pointer;
-}
-.categories .cat-element span, .categories .cat-element h3 {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: inherit;
-  height: inherit;
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.3);
-  text-align: center;
-}
-.categories .cat-element img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.categories .cat-element img:before {
-  content: "yee yee ass haircut";
-  width: 100%;
-  height: 20rem;
-  background-color: aqua;
-}
-
-.featured-prod {
-  margin: 3rem 15px;
-}
-.featured-prod .prod-cont {
-  max-width: 90%;
-  margin: 0 auto;
-}
-.featured-prod .product-element {
-  text-align: center;
-  padding: 1rem;
-  cursor: pointer;
-}
-.featured-prod .product-element img {
-  width: 100%;
-  max-width: 12rem;
-  height: 10rem;
-  margin: 25px auto;
-  object-fit: contain;
-}
-.featured-prod .product-element .productName {
-  font-size: 1.2rem;
-  font-weight: bold;
-  opacity: 0.6;
-  margin: 1.5rem 10% 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.featured-prod .product-element .productPrice {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin: 0.4rem 0;
-}
-
-@media (max-width: 768px) {
-  .categories .cat-element {
-    height: 12rem;
-  }
-}
-@media (max-width: 480px) {
-  .text-a {
-    font-size: 1.2rem;
-  }
-
-  .categories {
-    margin: 15px;
-    margin-top: 1.5rem;
-  }
-  .categories .cat-element {
-    height: 10rem;
-  }
-  .categories .cat-element img {
-    height: 10rem;
-  }
-
-  .main-prod img, .coming-soon img {
-    min-height: 150px;
-  }
-
-  .featured-prod {
-    margin: 1.5rem 15px;
-  }
-  .featured-prod .prod-cont .product-element .productName {
-    font-size: 0.8rem;
-  }
-  .featured-prod .prod-cont .product-element .productPrice {
-    font-size: 1.2rem;
-  }
-  .featured-prod .prod-cont .product-element img {
-    height: 6rem;
   }
 }
 

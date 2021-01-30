@@ -23,7 +23,6 @@ $(document).ready(function(){
                 
                 document.getElementById("prod-cont").innerHTML=cont
                 document.getElementById("prod-cont-2").innerHTML=cont
-                
               })
               .then(()=>{
                 
