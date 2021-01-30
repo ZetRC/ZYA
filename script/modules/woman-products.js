@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var buildProductsGrid=(()=>{
+    var loadProductsGrid=(()=>{
         fetch('https://fakestoreapi.com/products')
             .then(res=>res.json())
             .then(data=>{
@@ -19,6 +19,10 @@ $(document).ready(function(){
 
                 document.getElementById("prod-cont-woman").innerHTML=cont
               })
+              .then(()=>{
+                $("#product-grid").css("display","block")
+                $("#productsLoader").css("display","none")
+              })
     })
 
     var initNavbarToggler=(()=>{
@@ -37,5 +41,5 @@ $(document).ready(function(){
 
     initFiltersToggler()
     initNavbarToggler()
-    buildProductsGrid()
+    loadProductsGrid()
 })
