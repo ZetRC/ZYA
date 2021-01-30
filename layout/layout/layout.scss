@@ -286,3 +286,19 @@ footer{
         display: flex !important;
     }
 }
+
+@media(max-width:468px){
+    .prod-cont .product-element{
+        .productName{
+            font-size:.8rem;
+        }
+
+        .productPrice{
+            font-size:.8rem;
+        }
+
+        img{
+            height:6rem;
+        }
+    }
+}

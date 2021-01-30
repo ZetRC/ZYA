@@ -98,15 +98,6 @@
   .featured-prod {
     margin: 1.5rem 15px;
   }
-  .featured-prod .prod-cont .product-element .productName {
-    font-size: 0.8rem;
-  }
-  .featured-prod .prod-cont .product-element .productPrice {
-    font-size: 1.2rem;
-  }
-  .featured-prod .prod-cont .product-element img {
-    height: 6rem;
-  }
 }
 
 /*# sourceMappingURL=home.css.map */

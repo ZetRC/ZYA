@@ -253,5 +253,16 @@ footer .footer-content p {
     display: flex !important;
   }
 }
+@media (max-width: 468px) {
+  .prod-cont .product-element .productName {
+    font-size: 0.8rem;
+  }
+  .prod-cont .product-element .productPrice {
+    font-size: 0.8rem;
+  }
+  .prod-cont .product-element img {
+    height: 6rem;
+  }
+}
 
 /*# sourceMappingURL=layout.css.map */

@@ -53,12 +53,19 @@ input{
                 background: none;
             }
         }
+
+        .filter-btn{
+            display: none;
+        }
     }           
     .cont{
         display: flex;
         margin-top: 35px;
         .prod-filters{
             width: 12rem;
+            .closeFilters-btn{
+                display: none;
+            }
             .filter{
                 display:flex;
                 flex-flow: column;
@@ -91,14 +98,43 @@ input{
 
 @media(max-width:768px){
     .prod-filters{
+        
         display: none;
+        position: fixed;
+        background: #ffffff;
+        width: 50% !important;
+        height: 80%;
+        max-height: 35rem;
+        top: 50%;
+        left: 50%;
+        z-index: 99;
+        border: 1px solid #cccccc;
+        border-radius: 15px;
+        transform: translate(-50%, -50%);
+        overflow: scroll;
+        .closeFilters-btn{
+            display: inline !important;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 1rem;
+        }
     }
 
     .product-grid{
+        .filter-btn{
+            display: block !important;
+        }
         .cont{
             .products-container{
                 width:100%
             }
         }
+    }
+}
+
+@media(min-width:768px){
+    .prod-filters{
+        display: block !important;
     }
 }

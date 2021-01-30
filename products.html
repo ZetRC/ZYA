@@ -25,6 +25,9 @@
     </nav>
     <section class="product-grid">
         <div class="top-cont">
+            <button class="btn filter-btn" id="filterToggler-btn">
+                filter
+              </button>
             <div class="dropdown">
                 <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Sort By
@@ -39,7 +42,10 @@
         <div class="cont">
             <div class=" filterbrandFilter">
             </div>
-            <div class="prod-filters">
+            <div class="prod-filters" id="product-filters">
+                <div id="closeFilters-btn" class="closeFilters-btn">
+                    <i class="fas fa-times"></i>
+                </div>
                 <div class="filter catFilter">
                     <div class="text-type-a">Category</div>
                     <div class="filter-element-cont">

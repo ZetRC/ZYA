@@ -21,5 +21,21 @@ $(document).ready(function(){
               })
     })
 
+    var initNavbarToggler=(()=>{
+      $("#menu-toggler").click(function(){
+        $("#menu-cont").slideToggle()
+      })
+    })
+
+    var initFiltersToggler=(()=>{
+      console.log("yo!")
+
+      $("#filterToggler-btn , #closeFilters-btn").click(function(){
+        $("#product-filters").fadeToggle(200) 
+      })
+    })
+
+    initFiltersToggler()
+    initNavbarToggler()
     buildProductsGrid()
 })

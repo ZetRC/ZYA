@@ -50,12 +50,18 @@ input {
   outline: none;
   background: none;
 }
+.product-grid .top-cont .filter-btn {
+  display: none;
+}
 .product-grid .cont {
   display: flex;
   margin-top: 35px;
 }
 .product-grid .cont .prod-filters {
   width: 12rem;
+}
+.product-grid .cont .prod-filters .closeFilters-btn {
+  display: none;
 }
 .product-grid .cont .prod-filters .filter {
   display: flex;
@@ -84,10 +90,37 @@ input {
 @media (max-width: 768px) {
   .prod-filters {
     display: none;
+    position: fixed;
+    background: #ffffff;
+    width: 50% !important;
+    height: 80%;
+    max-height: 35rem;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    overflow: scroll;
+  }
+  .prod-filters .closeFilters-btn {
+    display: inline !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
   }
 
+  .product-grid .filter-btn {
+    display: block !important;
+  }
   .product-grid .cont .products-container {
     width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .prod-filters {
+    display: block !important;
   }
 }
 
