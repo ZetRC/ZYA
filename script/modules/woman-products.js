@@ -32,13 +32,21 @@ $(document).ready(function(){
     })
 
     var initFiltersToggler=(()=>{
-      console.log("yo!")
-
       $("#filterToggler-btn , #closeFilters-btn").click(function(){
         $("#product-filters").fadeToggle(200) 
       })
     })
 
+    var openProductCar=(()=>{
+      setTimeout(()=>{
+        $(".product-element , #close-card-btn").click(function(){
+          $("#productCard").fadeToggle()
+        })
+      },3000)
+      
+    })
+
+    openProductCar()
     initFiltersToggler()
     initNavbarToggler()
     loadProductsGrid()
