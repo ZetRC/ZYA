@@ -39,10 +39,12 @@ $(document).ready(function(){
 
     var openProductCar=(()=>{
       setTimeout(()=>{
-        $(".product-element , #close-card-btn").click(function(){
+        $(".product-element , #close-card-btn , #productCard").click(function(){
           $("#productCard").fadeToggle()
+          $("body").toggleClass('modal-open');
         })
       },3000)
+      
       
     })
 
