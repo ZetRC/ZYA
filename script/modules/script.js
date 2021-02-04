@@ -1,28 +1,35 @@
 $(document).ready(function(){
 
-    const buildProductsStripes=(()=>{
+    const loadProductsStripes=(()=>{
         fetch('https://fakestoreapi.com/products')
             .then(res=>res.json())
             .then(data=>{
-                console.log(data)
-                console.log(data[1])
-                console.log(data.length)
-                if(data.length > 0){
-                  var cont="";
+                const getManProducts=data.filter(e=>e.category==="electronics")
+                const getWomanProducts=data.filter(e=>e.category==="women clothing" )
+                console.log(getManProducts,getWomanProducts)
 
-                  data.forEach((u)=>{
-                    cont +=`<div id='product-element ' class='product-element ' data-id="${u.id}">`
-                    cont +=`<img src='${u.image}'>`
-                    cont +=`<div class='productName'>${u.title}</div>`
-                    cont +=`<div class='productPrice'>$${u.price}</div>`
-                    cont +=`</div>`
-                  })
-                }else{
-                  console.log("something went wrong")
-                }
-                
-                document.getElementById("prod-cont").innerHTML=cont
-                document.getElementById("prod-cont-2").innerHTML=cont
+                const buildProductStripes=((products,container)=>{
+                  if(data.length > 0){
+                    var cont="";
+  
+                    products.forEach((u)=>{
+                      cont +=`<div id='product-element ' class='product-element ' data-id="${u.id}">`
+                      cont +=`<img src='${u.image}'>`
+                      cont +=`<div class='productName'>${u.title}</div>`
+                      cont +=`<div class='productPrice'>$${u.price}</div>`
+                      cont +=`</div>`
+  
+                      document.getElementById(container).innerHTML=cont
+  
+                    })
+                  }else{
+                    console.log("something went wrong")
+                  }
+                })
+
+                buildProductStripes(getWomanProducts,"prod-cont")
+                buildProductStripes(getManProducts,"prod-cont-2")
+
               //builds products cards
 
                 $(".product-element , #close-card-btn , #cards-dark-bg").click(function(){
@@ -47,34 +54,34 @@ $(document).ready(function(){
                     infinite: true,
                     speed: 300,
                     slidesToShow: 5,
-                    slidesToScroll: 5,
+                    slidesToScroll: 1,
                     responsive: [
                       {
                         breakpoint: 1400,
                         settings: {
                           slidesToShow: 4,
-                          slidesToScroll: 4,
+                          slidesToScroll: 1,
                           infinite: true,
                         }
                       },{
                         breakpoint: 1024,
                         settings: {
                           slidesToShow: 3,
-                          slidesToScroll: 3,
+                          slidesToScroll: 1,
                         }
                       },
                       {
                         breakpoint: 768,
                         settings: {
                           slidesToShow: 2,
-                          slidesToScroll: 2
+                          slidesToScroll: 1
                         }
                       },
                       {
                         breakpoint: 480,
                         settings: {
                           slidesToShow: 2,
-                          slidesToScroll: 2
+                          slidesToScroll: 1
                         }
                       }
                     ]
@@ -98,5 +105,5 @@ $(document).ready(function(){
 
     initNavbarToggler()
     initLoader()
-    buildProductsStripes()
+    loadProductsStripes()
   })
