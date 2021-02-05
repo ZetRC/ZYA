@@ -50,8 +50,10 @@ $(document).ready(function(){
     })
 
     var initFiltersToggler=(()=>{
-      $("#filterToggler-btn , #closeFilters-btn").click(function(){
-        $("#product-filters").fadeToggle(200) 
+      $("#filterToggler-btn , #closeFilters-btn , #filters-bg").click(function(){
+        $("#filters-section").fadeToggle(200) 
+        $("body").toggleClass('modal-open');
+        /* $("#product-filters").animate({width:'toggle'},350); */
       })
     })
 

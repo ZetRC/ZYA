@@ -1,3 +1,5 @@
+//general classes
+
 body{
     margin: 0;
     padding: 0;
@@ -29,17 +31,20 @@ a{
 
 .btn{
     padding: 1rem;
-    border: 1px solid #d4d5d9;
-    margin: 1rem 0;
+    color: #000000;
+    background: none;
+    opacity: 1;
     font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 0;
+    margin: 1rem 3px;
     cursor:pointer;
+    border: 1px solid #000000;
+    filter: grayscale(1);
     transition: all .3s ease;
-    opacity: .6;
 
-    &:hover{
-        border-color: #000000;
-        opacity: 1;
-    }
+    
+
 }
 
 .logo{
@@ -60,7 +65,29 @@ a{
     font-weight: bold;
     text-align: center;
     margin: 1rem 0;
+
+
 }
+
+.dark-bg{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;;
+}
+
+
+@media(min-width:769px){
+    .only-mob{
+    display: none !important;
+    }
+}
+//general elements
 
 .product-element{
     text-align: center;
@@ -207,12 +234,12 @@ nav{
     margin: 0;
     overflow: scroll;
 
-    .dark-bg{
+    /* .dark-bg{
         width: inherit;
         height: inherit;
-        background: rgba(0, 0, 0,.2);
+        background: rgba(0, 0, 0,.4);
         position: fixed;
-    }
+    } */
     .product-cont{
         width: 70%;
         height: auto;

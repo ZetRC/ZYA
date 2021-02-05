@@ -44,8 +44,8 @@
 
 
 section{
-    max-width: 100rem;
-    margin: 0 auto;
+    /* max-width: 100rem; */
+    margin: 0 1rem;
 }
 
 input{
@@ -56,7 +56,7 @@ input{
     font-size: 1.2rem;
     margin: .8rem 0;
     font-weight: bold;
-    opacity: .6;
+    text-transform: uppercase;
 }
 
 
@@ -85,22 +85,24 @@ input{
     }           
     .cont{
         display: flex;
-        margin-top: 35px;
-        .prod-filters{
+/*         margin-top: 35px; */
+        .filters-sec{
             width: 12rem;
-            .closeFilters-btn{
-                display: none;
-            }
-            .filter{
-                display:flex;
-                flex-flow: column;
-                padding: .8rem 1rem;
-                .filter-element-cont{
-                    width: max-content;
+            .prod-filters{
+                width: inherit;
+                .closeFilters-btn{
+                    display: none;
                 }
-            }
+                .filter{
+                    display:flex;
+                    flex-flow: column;
+                    padding: .8rem 1rem;
+                    .filter-element-cont{
+                        width: max-content;
+                    }
+                }
+            }    
         }
-    
         .products-container{
             width:calc(100% - 12rem);;
             .prod-cont{
@@ -123,31 +125,38 @@ input{
 }
 
 @media(max-width:768px){
-    .prod-filters{
-        
+    .filters-sec{
         display: none;
+        width: 100% !important;
+        height: 100%;
         position: fixed;
-        background: #ffffff;
-        width: 50% !important;
-        height: 80%;
-        max-height: 35rem;
-        top: 50%;
-        left: 50%;
-        z-index: 99;
-        border: 1px solid #cccccc;
-        border-radius: 15px;
-        transform: translate(-50%, -50%);
-        overflow: scroll;
-        .closeFilters-btn{
-            display: inline !important;
-            position: absolute;
+        top: 0;
+        left: 0;
+        z-index: +99;
+
+        .prod-filters{        
+            background: #ffffff;
+            width: 60% !important;
+            max-width: 15rem;
+            height: 100%;
             top: 0;
-            right: 0;
-            padding: 1rem;
+            left: 0;
+            z-index: 99;
+            border: 1px solid #cccccc;
+            overflow: scroll;
+            position: relative;
+            .closeFilters-btn{
+                display: inline !important;
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 1rem;
+            }
         }
     }
 
     .product-grid{
+        
         .filter-btn{
             display: block !important;
         }
@@ -162,7 +171,7 @@ input{
 }
 
 @media(min-width:769px){
-    .prod-filters{
+    .filters-sec{
         display: block !important;
     }
 }

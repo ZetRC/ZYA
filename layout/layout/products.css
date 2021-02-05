@@ -42,8 +42,8 @@
 }
 
 section {
-  max-width: 100rem;
-  margin: 0 auto;
+  /* max-width: 100rem; */
+  margin: 0 1rem;
 }
 
 input {
@@ -54,7 +54,7 @@ input {
   font-size: 1.2rem;
   margin: 0.8rem 0;
   font-weight: bold;
-  opacity: 0.6;
+  text-transform: uppercase;
 }
 
 .product-grid {
@@ -81,20 +81,23 @@ input {
 }
 .product-grid .cont {
   display: flex;
-  margin-top: 35px;
+  /*         margin-top: 35px; */
 }
-.product-grid .cont .prod-filters {
+.product-grid .cont .filters-sec {
   width: 12rem;
 }
-.product-grid .cont .prod-filters .closeFilters-btn {
+.product-grid .cont .filters-sec .prod-filters {
+  width: inherit;
+}
+.product-grid .cont .filters-sec .prod-filters .closeFilters-btn {
   display: none;
 }
-.product-grid .cont .prod-filters .filter {
+.product-grid .cont .filters-sec .prod-filters .filter {
   display: flex;
   flex-flow: column;
   padding: 0.8rem 1rem;
 }
-.product-grid .cont .prod-filters .filter .filter-element-cont {
+.product-grid .cont .filters-sec .prod-filters .filter .filter-element-cont {
   width: max-content;
 }
 .product-grid .cont .products-container {
@@ -114,22 +117,28 @@ input {
   }
 }
 @media (max-width: 768px) {
-  .prod-filters {
+  .filters-sec {
     display: none;
+    width: 100% !important;
+    height: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .filters-sec .prod-filters {
     background: #ffffff;
-    width: 50% !important;
-    height: 80%;
-    max-height: 35rem;
-    top: 50%;
-    left: 50%;
+    width: 60% !important;
+    max-width: 15rem;
+    height: 100%;
+    top: 0;
+    left: 0;
     z-index: 99;
     border: 1px solid #cccccc;
-    border-radius: 15px;
-    transform: translate(-50%, -50%);
     overflow: scroll;
+    position: relative;
   }
-  .prod-filters .closeFilters-btn {
+  .filters-sec .prod-filters .closeFilters-btn {
     display: inline !important;
     position: absolute;
     top: 0;
@@ -145,7 +154,7 @@ input {
   }
 }
 @media (min-width: 769px) {
-  .prod-filters {
+  .filters-sec {
     display: block !important;
   }
 }
