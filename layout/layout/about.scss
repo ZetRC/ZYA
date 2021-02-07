@@ -39,6 +39,21 @@
     .btn{
         filter: none;
     }
+
+    .tools-cont{
+        margin: 0 auto;
+        width: max-content;
+        display: flex;
+        font-size: 1.5rem;
+        width: 100%;
+        max-width: 30rem;
+        justify-content: space-around;
+        ul{
+            li{
+                margin: 1rem 0;
+            }
+        }
+    }
 }
 
 
