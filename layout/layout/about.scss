@@ -13,14 +13,14 @@
     }
     
     p{
-        font-size: 1.2rem !important;
+        font-size: 1.2rem ;
         opacity: .8;
         letter-spacing: 1px;
         text-align: center !important;
     }
     
     img{
-        width: 70%;
+        width: 100%;
         height: auto;
         margin: 40px auto;
         display: flex;
@@ -46,7 +46,7 @@
         display: flex;
         font-size: 1.5rem;
         width: 100%;
-        max-width: 30rem;
+        max-width: 40rem;
         justify-content: space-around;
         ul{
             li{
@@ -58,13 +58,13 @@
 
 
 @media(max-width:1200px){
-    section{
+    .content{
         width: 70%;
     }
 }
 
 @media(max-width:768px){
-    section{
+    .content{
         width: 90%;
     }
     h2{
@@ -73,5 +73,9 @@
 
     p{
         font-size: .8rem !important;
+    }
+
+    img{
+        margin: 15px 0 !important;
     }
 }
