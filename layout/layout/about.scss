@@ -1,7 +1,6 @@
 .cont-center{
     margin: 0 auto;
 }
-
 .content{
     width:50%;
     margin:0 auto;
@@ -17,6 +16,11 @@
         opacity: .8;
         letter-spacing: 1px;
         text-align: center !important;
+    }
+
+    a{
+        text-decoration: underline;
+        color: #000000;
     }
     
     img{

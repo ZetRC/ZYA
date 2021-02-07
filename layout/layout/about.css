@@ -18,6 +18,10 @@
   letter-spacing: 1px;
   text-align: center !important;
 }
+.content a {
+  text-decoration: underline;
+  color: #000000;
+}
 .content img {
   width: 100%;
   height: auto;
