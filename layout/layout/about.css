@@ -1,0 +1,58 @@
+.cont-center {
+  margin: 0 auto;
+}
+
+.content {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+}
+.content h2 {
+  font-size: 2rem;
+  margin: 1.2rem 0;
+  text-align: center;
+}
+.content p {
+  font-size: 1.2rem !important;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  text-align: center !important;
+}
+.content img {
+  width: 70%;
+  height: auto;
+  margin: 40px auto;
+  display: flex;
+}
+.content li {
+  margin: 0.5rem 0;
+  font-weight: bold;
+  opacity: 0.6;
+}
+.content textarea {
+  height: 8rem !important;
+}
+.content .btn {
+  filter: none;
+}
+
+@media (max-width: 1200px) {
+  section {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.8rem !important;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

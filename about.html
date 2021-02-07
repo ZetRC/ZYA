@@ -4,8 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./layout/layout/layout.css">
+    <link rel="stylesheet" href="./layout/layout/about.css">
 </head>
-<body>
-    About    
+<body >
+    <nav >
+        <label for="logo" id='logo'><a href="index.html">zya</a></label>
+        <div class="menu-toggler" id="menu-toggler">
+            <i class="fas fa-bars"></i>
+        </div>
+            <ul id="menu-cont">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+    </nav>
+    <section class="content">
+        <h2>About this website</h2>
+        <p>This online store was created with the only porpouse of coding skills practicing,if you want to check more of my projects check this <a href="https://zetrc.github.io/portfolio/" target="_blank" rel="noopener noreferrer">website</a></p>
+        <div class="banners">
+            <h2>Banners</h2>
+            <p>all banners where created from scratch using photopea and adobeXD as designing tools and unsplash as images source , you can check the images used here</p>
+            <img src="./images/images-collage.jpg" alt="">
+        </div>
+        <div class="products">
+            <h2>API</h2>
+            <p>This website is currently integrated with a dummy data api,you can check the documetation <a href="https://fakestoreapi.com/" target="_blank" rel="noopener noreferrer">here</a></p>
+            <img src="./images/api_code_screenshot.png" alt="">
+        </div>
+        <div class="tools">
+            <h2>tools</h2>
+            <p>the tools that i used to create this website were:</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SASS</li>
+                <li>Javascript</li>
+                <li>Jquery</li>
+                <li>Bootstrap</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <div class="contactForm">
+                <h2>Contact</h2>
+                <form>
+                    <div class="row">
+                        <div class="col-xl-10 cont-center">
+                            <div class="row mt-3">
+                                <div class="col-xl-6 ">
+                                    <label for="firstName-content">First Name</label>
+                                    <input type="text" class="form-control" id="firstName-content" placeholder="Enter First Name">
+                                </div>
+                                <div class="col-xl-6">
+                                    <label for="lastName-content">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName-content" placeholder="Enter Last name">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-xl-12">
+                                    <label for="email-content">E-mail</label>
+                                    <input type="text" class="form-control" id="email-content" placeholder="Enter E-mail">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-xl-12">
+                                    <label for="message-content">Message</label>
+                                    <textarea class="form-control" id="message-content" placeholder="write your message here"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3 mb-3">Submit</button>
+                        </div>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info-cont">
+                <div class="info-cont">
+                    <label for="logo" class="logo">ZYA</label>
+                </div>
+                <div class="info-cont">
+                    <div>ACCESSIBILITY</div>
+                    <div>USABILITY</div>
+                </div>
+                <div class="info-cont">
+                    <div>SHOWCASE</div>
+                    <div>SERVICES</div>
+                    <div>RESORCES</div>
+                </div>
+                <div class="info-cont">
+                    <div>ABOUT US</div>
+                    <div>CONTACT US </div>
+                    <div>SUPPORT</div>
+                </div>
+            </div>
+            <div class="media-icons">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <p> Copyright SYA.All rights reserved</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
