@@ -252,6 +252,8 @@ nav ul li:hover {
 .productCard .product-cont .product-image img {
   width: 80%;
   margin: 0 auto;
+  max-height: 30rem;
+  object-fit: contain;
 }
 .productCard .product-cont .product-info {
   width: 60%;
@@ -271,7 +273,7 @@ nav ul li:hover {
 .productCard .product-cont .product-info .product-price {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  opacity: 0.6;
+  font-weight: bold;
 }
 .productCard .product-cont .product-info .product-description {
   margin-bottom: 1rem;
