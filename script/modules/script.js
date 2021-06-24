@@ -5,7 +5,7 @@ $(document).ready(function(){
             .then(res=>res.json())
             .then(data=>{
                 const getManProducts=data.filter(e=>e.category==="electronics")
-                const getWomanProducts=data.filter(e=>e.category==="women clothing" )
+                const getWomanProducts=data.filter(e=>e.category==="women's clothing" )
                 console.log(getManProducts,getWomanProducts)
 
                 const buildProductStripes=((products,container)=>{
