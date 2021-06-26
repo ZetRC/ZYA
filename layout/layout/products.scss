@@ -85,7 +85,6 @@ input{
     }           
     .cont{
         display: flex;
-/*         margin-top: 35px; */
         .filters-sec{
             width: 12rem;
             .prod-filters{
@@ -99,6 +98,22 @@ input{
                     padding: .8rem 1rem;
                     .filter-element-cont{
                         width: max-content;
+                    }
+                    .filter-cont{
+                        /* display: none; */
+                    }
+                    .filter-selector{
+                        display:flex;
+                        align-items:center;
+                        cursor:pointer;
+                        i{
+                            transition: all .3s ease;
+                            font-size:1.25rem;
+                            margin-left:.3rem;
+                        }
+                        .rotate-icon{
+                            transform: rotate(180deg);
+                        }
                     }
                 }
             }    

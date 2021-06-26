@@ -81,7 +81,6 @@ input {
 }
 .product-grid .cont {
   display: flex;
-  /*         margin-top: 35px; */
 }
 .product-grid .cont .filters-sec {
   width: 12rem;
@@ -99,6 +98,22 @@ input {
 }
 .product-grid .cont .filters-sec .prod-filters .filter .filter-element-cont {
   width: max-content;
+}
+.product-grid .cont .filters-sec .prod-filters .filter .filter-cont {
+  /* display: none; */
+}
+.product-grid .cont .filters-sec .prod-filters .filter .filter-selector {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.product-grid .cont .filters-sec .prod-filters .filter .filter-selector i {
+  transition: all 0.3s ease;
+  font-size: 1.25rem;
+  margin-left: 0.3rem;
+}
+.product-grid .cont .filters-sec .prod-filters .filter .filter-selector .rotate-icon {
+  transform: rotate(180deg);
 }
 .product-grid .cont .products-container {
   width: calc(100% - 12rem);

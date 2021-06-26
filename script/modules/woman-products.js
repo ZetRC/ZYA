@@ -57,7 +57,15 @@ $(document).ready(function(){
       })
     })
 
+    var filtersToggler = (()=>{
+      $(".filter-selector").click(function(){
+        $(this).siblings("div").slideToggle()
+        $(this).children("i").toggleClass("rotate-icon")
+      })
+    })
+
     initFiltersToggler()
     initNavbarToggler()
     loadProductsGrid()
+    filtersToggler()
 })
