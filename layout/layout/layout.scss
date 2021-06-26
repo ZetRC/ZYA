@@ -240,10 +240,10 @@ nav{
         background: rgba(0, 0, 0,.4);
         position: fixed;
     } */
-    .product-cont{
+    .product-cont {
         width: 70%;
         height: auto;
-        min-height: 70%;
+        min-height: 60%;
         background: #ffffff;
         position: absolute;
         top: 50%;
@@ -252,6 +252,8 @@ nav{
         display: flex;
         border-radius: 15px;
         border: 1px solid #cccccc;
+        max-height:100vh;
+        overflow:auto;
         .close-btn{
             position: absolute;
             top: 0;

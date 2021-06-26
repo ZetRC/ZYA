@@ -220,7 +220,7 @@ nav ul li:hover {
 .productCard .product-cont {
   width: 70%;
   height: auto;
-  min-height: 70%;
+  min-height: 60%;
   background: #ffffff;
   position: absolute;
   top: 50%;
@@ -229,6 +229,8 @@ nav ul li:hover {
   display: flex;
   border-radius: 15px;
   border: 1px solid #cccccc;
+  max-height: 100vh;
+  overflow: auto;
 }
 .productCard .product-cont .close-btn {
   position: absolute;
