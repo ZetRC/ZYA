@@ -10,9 +10,11 @@ $(document).ready(function(){
                   console.log(data[0].id)
                   data.forEach((u)=>{
                     cont +=`<div id='product-element ' class='product-element col-xl-3 col-lg-4 col-6 ' data-id="${u.id}">`
+                    cont +=`<div class="product-content">`
                     cont +=`<img src='${u.image}'>`
                     cont +=`<div class='productName'>${u.title}</div>`
                     cont +=`<div class='productPrice'>$${u.price}</div>`
+                    cont +=`</div>`
                     cont +=`</div>`
                   })
                 }else{
